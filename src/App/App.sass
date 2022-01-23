@@ -72,58 +72,109 @@ footer
   .car-informations
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: space-evenly
 
-    .acceleration
+    width: 790px
+    column-gap: 10%
+
+    .car-stats
       display: flex
-      flex-direction: column
-      justify-content: center
-      gap: 10px
+      flex-direction: row
+      justify-content: space-between
 
-      .animations
+      flex: 1.5
+
+      .acceleration
         display: flex
-        flex-direction: row
+        flex-direction: column
+        justify-content: center
         gap: 10px
 
-      .speed
-        margin: 0px
-        text-align: center
-        color: #ffffff
-        font-size: 13px
-        font-weight: 500
+        .animations
+          display: flex
+          flex-direction: row
+          gap: 10px
 
-    .max-speed, .autonomy
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      gap: 10px
-      color: #ffffff
+        .speed
+          margin: 0px
+          text-align: center
+          color: #ffffff
+          font-size: 13px
+          font-weight: 500
 
-      .speed, .distance
+      .max-speed, .autonomy
         display: flex
-        flex-direction: row
-        align-items: baseline
-
-        font-size: 20px
-        line-height: 20px
-        font-weight: 500
-
-        *
-          margin: 0px
-
-        .big-text
-          font-size: 34px
-          line-height: 30px
-          margin: 0px
-
-      .text
-        margin: 0px
-        text-align: center
+        flex-direction: column
+        justify-content: space-between
+        gap: 10px
         color: #ffffff
-        font-size: 13px
-        font-weight: 500
+
+        .speed, .distance
+          display: flex
+          flex-direction: row
+          align-items: baseline
+
+          font-size: 20px
+          line-height: 20px
+          font-weight: 500
+
+          *
+            margin: 0px
+
+          .big-text
+            font-size: 34px
+            line-height: 30px
+            margin: 0px
+
+        .text
+          margin: 0px
+          text-align: center
+          color: #ffffff
+          font-size: 13px
+          font-weight: 500
+
+    .reserve-button
+      color: #ffffff
+      font-weight: 500
+      background: transparent
+
+      flex: 0.5
+      height: 42px
+
+      border-radius: 200px
+      border-style: solid
+      border-color: #ffffff
+      border-width: 2px
+
+  .arrow-down
+    width: 20px
+    height: 60px
+
+    animation-name: bounce
+    animation-duration: 3000ms
+    animation-iteration-count: infinite
+
+@keyframes bounce
+  0%,
+  50%,
+  90%
+    transform: translateY(0)
+
+  60%
+    transform: translateY(5px)
+
+  70%
+    transform: translateY(0px)
+
+  80%
+    transform: translateY(4px)
 
 
 @media screen and (max-width: 900px)
   #app
     background-image: url("../assets/images/tesla/hero-mobile.webp")
+
+  footer
+    .car-informations
+      width: 80%
+      flex-direction: column
