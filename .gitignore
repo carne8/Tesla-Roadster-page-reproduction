@@ -18,5 +18,5 @@ packages/
 src/fable_modules
 
 #Other
-out/
+output/
 .env
