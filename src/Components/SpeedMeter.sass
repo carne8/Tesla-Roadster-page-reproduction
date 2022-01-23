@@ -1,0 +1,28 @@
+.speed-meter
+  position: relative
+  width: 42px
+  height: 26px
+
+  *
+    position: absolute
+    bottom: 0px
+  .speed-meter-background
+    width: 30px
+    margin-left: 6px
+  .speed-meter-graduation
+    width: 42px
+  .speed-meter-needle
+    width: 4px
+    margin-left: 19px
+
+    transform-origin: 2px calc(100% - 2px)
+    animation-name: rotate-needle
+    animation-delay: 500ms
+    animation-duration: 1000ms
+    animation-fill-mode: both
+
+@keyframes rotate-needle
+  0%
+    transform: rotate(-90deg)
+  100%
+    transform: rotate(90deg)

@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.fable": true,
+    "**/.ionide": true,
+    "**/.vscode": false,
+    "**/*.meta": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/**.fs.js": true,
+    "src/fable_modules": true,
+    "**/obj": true,
+    "**/bin": true,
+    "**/paket.lock": true,
+    "**/paket.dependencies": true,
+    "**/paket.references": true,
+    "paket-files/": true,
+    "packages/": true,
+    ".paket/": true,
+    ".config/": true
+  },
+  "explorerExclude.backup": null
+}

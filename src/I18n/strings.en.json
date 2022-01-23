@@ -1,0 +1,7 @@
+{ "menu": "Menu",
+  "carName": "Roadster",
+  "carInfos": {
+    "description": "The quickest car in the world, with record-setting acceleration, range and performance.",
+    "speedRun": "0-60mph"
+  }
+}

@@ -1,0 +1,7 @@
+{ "menu": "Menu",
+  "carName": "Roadster",
+  "carInfos": {
+    "description": "Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.",
+    "speedRun": "0 à 100 km/h"
+  }
+}

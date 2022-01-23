@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="YoLo.fs" />
+    <Compile Include="I18n/I18n.fs" />
+
+    <Compile Include="Components/SpeedMeter.fs" />
+    <Compile Include="Components/DefilingNumerals.fs" />
+
+    <Compile Include="App/App.Types.fs" />
+    <Compile Include="App/App.State.fs" />
+    <Compile Include="App/App.View.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

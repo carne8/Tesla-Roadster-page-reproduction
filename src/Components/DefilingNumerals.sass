@@ -1,0 +1,49 @@
+.numerals
+  display: flex
+
+  .numerals
+    width: 20px
+    height: 26px
+    background-image: url("../assets/images/speed-meter/numerals.svg")
+    background-size: cover
+
+  .point
+    color: #ffffff
+    font-size: 35px
+    line-height: 26px
+    margin: 0px
+    align-self: flex-end
+
+  .seconds
+    color: #ffffff
+    font-size: 18px
+    line-height: 18px
+    margin: 0px
+    align-self: flex-end
+
+  .unity
+    animation-name: scrollUnityBackground
+    animation-delay: 500ms
+    animation-duration: 700ms
+    animation-fill-mode: forwards
+    animation-timing-function: cubic-bezier(0, 0, 0.01, 1.0)
+
+  .decimal
+    animation-name: scrollDecimalBackground
+    animation-delay: 500ms
+    animation-duration: 1000ms
+    animation-fill-mode: forwards
+    animation-timing-function: cubic-bezier(0, 0, 0.01, 1.0)
+
+
+@keyframes scrollUnityBackground
+  0%
+    background-position-y: top
+  100%
+    background-position-y: -30px
+
+@keyframes scrollDecimalBackground
+  0%
+    background-position-y: top
+  100%
+    background-position-y: -584px

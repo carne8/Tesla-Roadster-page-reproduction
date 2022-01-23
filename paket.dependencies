@@ -1,0 +1,11 @@
+source https://api.nuget.org/v3/index.json
+
+nuget Fable.Browser.Navigator
+nuget Fable.Elmish
+nuget Fable.Elmish.Debugger
+nuget Fable.Elmish.React
+nuget Fable.PolyglotProvider
+nuget Feliz
+nuget FSharp.Core
+nuget Fable.Browser.Dom
+nuget Fable.Core
