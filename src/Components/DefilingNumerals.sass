@@ -2,8 +2,8 @@
   display: flex
 
   .numerals
-    width: 20px
-    height: 26px
+    width: 23px
+    height: 29px
     background-image: url("../assets/images/speed-meter/numerals.svg")
     background-size: cover
 
@@ -35,15 +35,24 @@
     animation-fill-mode: forwards
     animation-timing-function: cubic-bezier(0, 0, 0.01, 1.0)
 
+    @media screen and (max-width: 900px)
+      animation-name: scrollDecimalBackgroundMobile
+
 
 @keyframes scrollUnityBackground
   0%
     background-position-y: top
   100%
-    background-position-y: -30px
+    background-position-y: -29px
 
 @keyframes scrollDecimalBackground
   0%
     background-position-y: top
   100%
-    background-position-y: -584px
+    background-position-y: -262px
+
+@keyframes scrollDecimalBackgroundMobile
+  0%
+    background-position-y: top
+  100%
+    background-position-y: -262px

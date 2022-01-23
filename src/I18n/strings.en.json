@@ -1,7 +1,19 @@
-{ "menu": "Menu",
+{
+  "menu": "Menu",
+  "speed": "mph",
+  "distance": "mi",
   "carName": "Roadster",
   "carInfos": {
     "description": "The quickest car in the world, with record-setting acceleration, range and performance.",
-    "speedRun": "0-60mph"
-  }
+    "speedRun": "0-60",
+    "maxSpeed": {
+      "speed": "250",
+      "text": "Top Speed"
+    },
+    "autonomy": {
+      "distance": "620",
+      "text": "Range"
+    }
+  },
+  "reserve": "RESERVE NOW"
 }

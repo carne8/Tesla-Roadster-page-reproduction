@@ -1,7 +1,19 @@
-{ "menu": "Menu",
+{
+  "menu": "Menu",
+  "speed": "km/h",
+  "distance": "km",
   "carName": "Roadster",
   "carInfos": {
     "description": "Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.",
-    "speedRun": "0 à 100 km/h"
-  }
+    "speedRun": "0 à 100",
+    "maxSpeed": {
+      "speed": "400",
+      "text": "Vitesse maximale"
+    },
+    "autonomy": {
+      "distance": "1000",
+      "text": "Autonomie"
+    }
+  },
+  "reserve": "RÉSERVEZ"
 }

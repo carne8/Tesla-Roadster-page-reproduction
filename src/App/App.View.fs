@@ -50,8 +50,51 @@ let View (props: {| model: obj; dispatch: obj |}) =
                                 ]
 
                                 Html.p [
-                                    prop.text I18n.carInfos.speedRun
+                                    prop.text (I18n.carInfos.speedRun + " " + I18n.speed)
                                     prop.className "speed"
+                                ]
+                            ]
+                        ]
+
+                        Html.div [
+                            prop.className "max-speed"
+                            prop.children [
+                                Html.div [
+                                    prop.className "speed"
+                                    prop.children [
+                                        Html.p [ prop.text "+" ]
+                                        Html.p [
+                                            prop.className "big-text"
+                                            prop.text I18n.carInfos.maxSpeed.speed
+                                        ]
+                                        Html.p [ prop.text I18n.speed ]
+                                    ]
+                                ]
+
+                                Html.div [
+                                    prop.className "text"
+                                    prop.text I18n.carInfos.maxSpeed.text
+                                ]
+                            ]
+                        ]
+
+                        Html.div [
+                            prop.className "autonomy"
+                            prop.children [
+                                Html.div [
+                                    prop.className "distance"
+                                    prop.children [
+                                        Html.p [
+                                            prop.className "big-text"
+                                            prop.text I18n.carInfos.autonomy.distance
+                                        ]
+                                        Html.p [ prop.text I18n.distance ]
+                                    ]
+                                ]
+
+                                Html.div [
+                                    prop.className "text"
+                                    prop.text I18n.carInfos.autonomy.text
                                 ]
                             ]
                         ]
